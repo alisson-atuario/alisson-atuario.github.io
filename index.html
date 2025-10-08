@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alisson Ursulino | Data Scientist</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
     <style>
         /* --- ESTILOS GERAIS --- */
         :root {
@@ -70,6 +72,12 @@
             color: var(--cor-branco);
         }
 
+        .material-symbols-outlined {
+            /* display: inline-flex; */
+            vertical-align: middle;
+            margin-right: 0;
+            font-size: inherit;
+        }
         /* --- SEÇÃO HEADER/PERFIL --- */
         #perfil {
             background: linear-gradient(135deg, var(--cor-primaria) 0%, #1a2530 100%);
@@ -189,7 +197,9 @@
             color: var(--cor-primaria);
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            /* justify-content: space-between; */
+            margin-left: auto;
+            gap: 10px
         }
 
         .badge-premio {
@@ -329,7 +339,7 @@
                 <div class="projeto-card">
                     <div class="projeto-conteudo">
                         <h3 class="projeto-titulo">
-                            🏆 Previsão de Sinistralidade com Conformal Prediction
+                            <i class="fas fa-trophy"></i> Previsão de Sinistralidade com Conformal Prediction
                             <span class="badge-premio">Premiado pelo IBA</span>
                         </h3>
                         <p class="projeto-descricao">
@@ -359,7 +369,9 @@
                 <!-- Projeto 2 - Churn Prediction -->
                 <div class="projeto-card">
                     <div class="projeto-conteudo">
-                        <h3 class="projeto-titulo">📊 Customer Churn Prediction</h3>
+                        <h3 class="projeto-titulo">
+                            <i class="fas fa-chart-bar"></i> Customer Churn Prediction
+                        </h3>
                         <p class="projeto-descricao">
                             Sistema completo de predição de churn com dashboard Streamlit interativo. 
                             Implementação de calibração Venn-ABERS para probabilidades confiáveis e 
@@ -414,5 +426,3 @@
     </section>
 </body>
 </html>
-
-
