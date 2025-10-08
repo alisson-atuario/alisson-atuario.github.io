@@ -1,89 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alisson Ursulino | Data Scientist & ML Engineer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisson Ursulino | Data Scientist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="assets/foto.jpg" alt="Foto de Alisson Ursulino" class="profile-photo" />
-      <div>
-        <h1>Alisson Ursulino</h1>
-        <p class="subtitle">Cientista de Dados • Machine Learning • IA Aplicada</p>
-        <p class="location">Fortaleza, CE · <a href="mailto:alisson.ursulino@gmail.com">alisson.ursulino@gmail.com</a></p>
-        <div class="links">
-          <a href="https://github.com/alissonursulino" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/alissonursulino/" target="_blank">LinkedIn</a>
-          <a href="https://alissonursulino.github.io/portfolio" target="_blank">Portfolio</a>
+    <!-- Seção Perfil -->
+    <section id="perfil">
+        <div class="container">
+            <img src="assets/foto.jpg" alt="Alisson Ursulino" class="foto-perfil">
+            <h1 class="perfil-titulo">Alisson Ursulino</h1>
+            <p class="perfil-subtitulo">Data Scientist | Machine Learning Engineer</p>
+            <p class="perfil-descricao">
+                Crio soluções de ML com probabilidades calibradas para decisões confiáveis. 
+                Especialista em Python, modelos preditivos e dashboards interativos que 
+                transformam dados em estratégias de negócio.
+            </p>
+            <div class="redes-sociais">
+                <a href="https://linkedin.com/in/alisson-ursulino-a746471a4" class="rede-social" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/alisson-atuario" class="rede-social" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:alisson.atuario@gmail.com" class="rede-social">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </section>
 
-  <section class="about">
-    <h2>Sobre mim</h2>
-    <p>
-      Cientista de Dados e Engenheiro de Machine Learning com foco em modelagem probabilística calibrada,
-      interpretabilidade e sistemas produtivos de IA. Atuo na criação de soluções de ponta que unem pesquisa aplicada,
-      engenharia e impacto de negócio.
-    </p>
-    <p>
-      Meu trabalho enfatiza **modelos confiáveis e interpretáveis**, com destaque para calibração de probabilidades (Venn-ABERS),
-      explicabilidade com SHAP e integração de pipelines MLOps para produção.
-    </p>
-  </section>
+    <!-- Seção Sobre Mim -->
+    <section id="sobre">
+        <div class="container">
+            <h2 class="secao-titulo">Sobre Mim</h2>
+            <div class="sobre-conteudo">
+                <p>
+                    Sou um profissional premiado em Ciência de Dados com formação atuarial e especialização em modelos 
+                    preditivos avançados. Minha expertise está no desenvolvimento de sistemas de machine learning com 
+                    calibração de probabilidades para decisões de negócio confiáveis.
+                </p>
+                <p>
+                    Tenho experiência em projetos que vão desde previsão de sinistralidade no setor de seguros até 
+                    análise de churn de clientes, sempre aplicando metodologias robustas como Conformal Prediction 
+                    e Venn-ABERS para garantir resultados precisos e interpretáveis.
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <section class="projects">
-    <h2>Projetos em Destaque</h2>
+    <!-- Seção Projetos -->
+    <section id="projetos">
+        <div class="container">
+            <h2 class="secao-titulo">Meus Projetos</h2>
+            <div class="projetos-grid">
+                <!-- Projeto 1 - Premiado -->
+                <div class="projeto-card">
+                    <div class="projeto-conteudo">
+                        <h3 class="projeto-titulo">
+                            🏆 Previsão de Sinistralidade com Conformal Prediction
+                            <span class="badge-premio">Premiado pelo IBA</span>
+                        </h3>
+                        <p class="projeto-descricao">
+                            Projeto premiado pelo Instituto Brasileiro de Atuária apresentando abordagem 
+                            inovadora para precificação de seguros usando LSTM Probabilística e Conformal 
+                            Prediction. Desenvolvimento de framework robusto para intervalos de confiança 
+                            adaptativos em sinistros diários.
+                        </p>
+                        <div class="tecnologias">
+                            <span class="tecnologia">Python</span>
+                            <span class="tecnologia">LSTM</span>
+                            <span class="tecnologia">Conformal Prediction</span>
+                            <span class="tecnologia">PyTorch</span>
+                            <span class="tecnologia">Time Series</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/alisson-atuario/IBA_PureRiskConformal" class="btn" target="_blank">
+                                <i class="fab fa-github"></i> Código Fonte
+                            </a>
+                            <a href="https://atuarios.org.br/lancamento-da-8a-edicao-da-revista-brasileira-de-atuaria/" class="btn btn-outline" target="_blank">
+                                <i class="fas fa-newspaper"></i> Ver Publicação
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="project-card">
-      <h3>🏆 Projeto Premiado - IBA Brasil 2025</h3>
-      <p>
-        <strong>“Previsão de demandas complexas em ambientes incertos com séries temporais híbridas”</strong><br>
-        Projeto vencedor em competição de inovação aplicada à análise de dados no Brasil, com abordagem de séries temporais não lineares
-        e redes neurais híbridas interpretáveis.
-      </p>
-      <ul>
-        <li>Modelagem de dinâmicas complexas multivariadas</li>
-        <li>Integração de Deep Learning e decomposição de sinais</li>
-        <li>Reconhecimento nacional no <strong>IBA Brasil</strong></li>
-      </ul>
-    </div>
+                <!-- Projeto 2 - Churn Prediction -->
+                <div class="projeto-card">
+                    <div class="projeto-conteudo">
+                        <h3 class="projeto-titulo">📊 Customer Churn Prediction</h3>
+                        <p class="projeto-descricao">
+                            Sistema completo de predição de churn com dashboard Streamlit interativo. 
+                            Implementação de calibração Venn-ABERS para probabilidades confiáveis e 
+                            SHAP para explicabilidade. Métricas de negócio alinhadas com F2-score 
+                            otimizado para priorizar recall.
+                        </p>
+                        <div class="tecnologias">
+                            <span class="tecnologia">Python</span>
+                            <span class="tecnologia">LightGBM</span>
+                            <span class="tecnologia">Venn-ABERS</span>
+                            <span class="tecnologia">SHAP</span>
+                            <span class="tecnologia">Streamlit</span>
+                            <span class="tecnologia">MLOps</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/alisson-atuario/churn/tree/master" class="btn" target="_blank">
+                                <i class="fab fa-github"></i> Código Fonte
+                            </a>
+                            <a href="https://alisson-atuario.github.io/" class="btn btn-outline" target="_blank">
+                                <i class="fas fa-rocket"></i> Ver Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="project-card">
-      <h3>📊 Customer Churn Prediction & Analysis Dashboard</h3>
-      <p>
-        Sistema de previsão de churn em produção com foco em confiabilidade das probabilidades.
-        Implementa calibração <strong>Venn-ABERS</strong>, explicabilidade com <strong>SHAP</strong>
-        e visualização interativa em <strong>Streamlit + Plotly</strong>.
-      </p>
-      <ul>
-        <li>Pipeline completo de ML: treino, validação, calibração e explicação</li>
-        <li>Dashboard interativo para decisões estratégicas de retenção</li>
-        <li>Repositório completo no GitHub com documentação técnica</li>
-      </ul>
-      <p><a href="https://github.com/alissonursulino/churn-prediction" target="_blank">Ver projeto no GitHub →</a></p>
-    </div>
-  </section>
-
-  <section class="skills">
-    <h2>Tecnologias & Competências</h2>
-    <ul>
-      <li>Python, Scikit-learn, LightGBM, XGBoost</li>
-      <li>SHAP, Calibração de Probabilidades (Venn-ABERS, Platt, Isotônica)</li>
-      <li>Streamlit, Plotly, Dashboards Interativos</li>
-      <li>SQL, Pandas, Feature Engineering</li>
-      <li>MLOps, Docker, GitHub Actions</li>
-      <li>Deep Learning aplicado a séries temporais</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2025 Alisson Ursulino — Desenvolvido com 💡 e dados.</p>
-  </footer>
+    <!-- Seção Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2 class="secao-titulo">Vamos Conversar?</h2>
+            <p class="contato-descricao">
+                Estou sempre aberto a discutir novas oportunidades, parcerias ou simplesmente 
+                conversar sobre ciência de dados e machine learning.
+            </p>
+            <div class="email">
+                <a href="mailto:alisson.atuario@gmail.com">alisson.atuario@gmail.com</a>
+            </div>
+            <div class="redes-sociais">
+                <a href="https://linkedin.com/in/alisson-ursulino-a746471a4" class="rede-social" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/alisson-atuario" class="rede-social" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:alisson.atuario@gmail.com" class="rede-social">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
