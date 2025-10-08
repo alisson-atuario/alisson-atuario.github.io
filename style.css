@@ -1,0 +1,109 @@
+/* ====== Global ====== */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fb;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ====== Header ====== */
+header {
+  background: linear-gradient(135deg, #222, #444);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+.subtitle {
+  font-weight: 500;
+  color: #ddd;
+}
+
+.location a {
+  color: #9dd9ff;
+  text-decoration: none;
+}
+
+.links a {
+  color: #fff;
+  background: #0077ff;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  margin: 0 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.links a:hover {
+  background: #005fcc;
+}
+
+/* ====== Sections ====== */
+section {
+  padding: 2rem 1rem;
+  max-width: 850px;
+  margin: auto;
+}
+
+h2 {
+  border-left: 4px solid #0077ff;
+  padding-left: 10px;
+}
+
+.project-card {
+  background: white;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card a {
+  color: #0077ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skills li {
+  background: #0077ff15;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+  font-size: 0.9rem;
+}
