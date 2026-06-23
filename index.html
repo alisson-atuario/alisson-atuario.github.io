@@ -73,7 +73,6 @@
         }
 
         .material-symbols-outlined {
-            /* display: inline-flex; */
             vertical-align: middle;
             margin-right: 0;
             font-size: inherit;
@@ -197,7 +196,6 @@
             color: var(--cor-primaria);
             display: flex;
             align-items: center;
-            /* justify-content: space-between; */
             margin-left: auto;
             gap: 10px
         }
@@ -209,6 +207,16 @@
             border-radius: 15px;
             font-size: 0.75rem;
             font-weight: bold;
+        }
+
+        .badge-novo {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            white-space: nowrap;
         }
 
         .projeto-descricao {
@@ -279,7 +287,7 @@
                 align-items: flex-start;
             }
             
-            .badge-premio {
+            .badge-premio, .badge-novo {
                 margin-top: 10px;
             }
         }
@@ -335,6 +343,7 @@
         <div class="container">
             <h2 class="secao-titulo">Meus Projetos</h2>
             <div class="projetos-grid">
+
                 <!-- Projeto 1 - Premiado -->
                 <div class="projeto-card">
                     <div class="projeto-conteudo">
@@ -397,6 +406,7 @@
                     </div>
                 </div>
 
+                <!-- Projeto 3 - Value at Risk -->
                 <div class="projeto-card">
                     <div class="projeto-conteudo">
                         <h3 class="projeto-titulo">
@@ -426,6 +436,7 @@
                     </div>
                 </div>
 
+                <!-- Projeto 4 - Otimizador de Portfólio -->
                 <div class="projeto-card">
                     <div class="projeto-conteudo">
                         <h3 class="projeto-titulo">
@@ -454,6 +465,39 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Projeto 5 - Painel Macro Brasil (NOVO) -->
+                <div class="projeto-card">
+                    <div class="projeto-conteudo">
+                        <h3 class="projeto-titulo">
+                            <i class="fas fa-globe"></i> Painel Macroeconômico Brasil ao Vivo
+                            <span class="badge-novo">Novo</span>
+                        </h3>
+                        <p class="projeto-descricao">
+                            Dashboard interativo que consolida os principais indicadores macroeconômicos
+                            brasileiros em tempo real — SELIC, IPCA, câmbio, inadimplência, IBOVESPA e mais.
+                            Combina dados do SGS/BACEN com Yahoo Finance, orquestrado via Prefect com
+                            atualização automática e catálogo dinâmico de indicadores customizáveis.
+                        </p>
+                        <div class="tecnologias">
+                            <span class="tecnologia">Python</span>
+                            <span class="tecnologia">Streamlit</span>
+                            <span class="tecnologia">Plotly</span>
+                            <span class="tecnologia">BACEN SGS</span>
+                            <span class="tecnologia">yFinance</span>
+                            <span class="tecnologia">Prefect</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="https://github.com/alisson-atuario/macro-brasil" class="btn" target="_blank">
+                                <i class="fab fa-github"></i> Código Fonte
+                            </a>
+                            <a href="https://macro-brasil.streamlit.app/" class="btn btn-outline" target="_blank">
+                                <i class="fas fa-rocket"></i> Ver Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -483,6 +527,4 @@
         </div>
     </section>
 </body>
-</html>
-
-
+</html>git c
